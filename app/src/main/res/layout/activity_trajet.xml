@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trajet">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:autoStart="true"
+            android:flipInterval="3000"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/trajet"
+
+                >
+
+            </ImageView>
+
+
+        </ViewFlipper>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="#006C79"
+            android:text="Choisir le trajet"
+            android:textSize="36sp"
+            android:textStyle="bold|italic"
+            />
+        <Spinner
+            android:id="@+id/selectbox_trajet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="25dp"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/btn_trajet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#CDDC39"
+            android:drawableRight="@android:drawable/ic_media_play"
+            android:text="etape suivante" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
